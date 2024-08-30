@@ -1,0 +1,201 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.section-one{
+    background-image:linear-gradient(rgba(8, 0, 94,90%),rgba(8, 0, 94,90%)), url("../imgs/hero-bg-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section-one-text,
+.section-one-img{
+    width: 90%;
+}
+@media only screen and (min-width: 768px) {
+    .section-one-text{
+        width: 45%;
+    }
+    .section-one-img {
+        width: 45%;
+    }
+}
+.section-one-text > h1,h5{
+    color: rgba(255, 255, 255, 0.78) !important;
+}
+.section-one-text h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+.section-one-text h1 span{
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #1acc8d;
+}
+.section-one-text h5{
+    font-size: 22px;
+}
+.section-one-text > button{
+    background: none;
+    border: none;
+}
+.section-one-text .get-started{
+    color: white;
+    background-color: #1acc8d;
+    padding: 10px 35px;
+    border-radius:20px ;
+}
+.section-one-text .watch{
+    color: white !important;
+    margin-left: 20px;
+}
+.section-one-text .watch i{
+    color: #1acc8d;
+}
+.section-one-img img{
+    height: 550px;
+    margin-right: 0;
+    justify-self: end;
+    animation: upAndDown 5s ease-in-out infinite;
+}
+@keyframes upAndDown {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+.section-one .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: url("../imgs/wave.png");
+    background-size: 2500px 60px;
+}
+.section-one .wave.wave1{
+    animation: animate 16s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+@keyframes animate {
+    0%
+    {
+        background-position-x:0 ;
+    }
+    100%
+    {
+        background-position-x:2500px ;
+    }
+    
+}
+.section-one .wave.wave2{
+    animation: animate2 12s linear infinite;
+    z-index: 999;
+    opacity: 0.6;
+    animation-delay: -3s;
+    bottom: 0px;
+}
+@keyframes animate2 {
+    0%
+    {
+        background-position-x:0 ;
+    }
+    100%
+    {
+        background-position-x:2500px ;
+    }
+
+}
+.section-one .wave.wave3{
+    animation: animate3 7s linear infinite;
+    z-index: 998;
+    opacity: 0.3;
+    animation-delay: -1s;
+    bottom: 0px;
+}
+@keyframes animate3 {
+    0%
+    {
+        background-position-x:0 ;
+    }
+    100%
+    {
+        background-position-x:2500px ;
+    }
+
+}
+/************************************************************************************************************************************/
+.section-two-about,
+.section-two-cards{
+    width: 90%;
+}
+@media only screen and (min-width: 768px) {
+    .section-two-about{
+        width: 85%;
+    }
+    .section-two-cards{
+        /*width: 50%;*/
+        justify-self: end;
+
+    }
+}
+
+.section-two-about{
+
+}
+.section-two-about .small-title{
+    background-color: rgba(26, 204, 141, 0.08);
+    color: #1acc8d;
+    padding: 10px;
+    border-radius: 5px;
+}
+.section-two-about .title{
+    margin-top: 20px;
+    color: #040677;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+}
+.section-two-about .read-more{
+    background-color: #1acc8d;
+    border: none;
+    padding: 8px 35px;
+    border-radius: 5px;
+    color: white;
+}
+.section-two-cards{
+
+}
+.section-two-cards .col-6 .card{
+    box-shadow: 1px 1px 20px 20px #dddddd59;
+    border: none;
+    border-radius: 10px;
+    padding: 40px 30px;
+}
+.section-two-cards .col-6 .card:hover{
+    cursor:pointer;
+}
+.section-two-cards .col-6 .card i{
+    color: #1acc8d;
+    font-size: 35px;
+    background-color: #1ACC8D14;
+    padding: 25px;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.section-two-cards .col-6 .card:hover i{
+    background-color: #1acc8d;
+    color: white;
+
+}
+.section-two-cards .col-6 .card h5{
+    color: #040677 !important;
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 25px;
+}
+.section-two-cards .col-6 .card p{
+    font-size: 17px;
+}
